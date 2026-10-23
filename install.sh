@@ -41,4 +41,6 @@ if ! command -v yay >/dev/null 2>&1; then
 fi
 
 yay -S --needed --noconfirm vim-plug
+go install golang.org/x/tools/gopls@latest
+go install golang.org/x/tools/cmd/goimports@latest
 vim +PlugInstall +qall
